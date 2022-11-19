@@ -7,6 +7,9 @@ const UploadForm = (props) => {
 
   const types = ["image/png", "image/jpeg", "image/jpg"];
 
+  const setFileUpload = (data)=>{
+    setfile(data)
+  }
   const changeHandler = (e) => {
     let selected = e.target.files[0];
     if (selected && types.includes(selected.type)) {
@@ -27,7 +30,7 @@ const UploadForm = (props) => {
         <div className="output">
           {error && <div className="error">{error}</div>}
           {file && <div>{file.name}</div>}
-          {file && <ProgressBar file={file} setFile={setfile} />}
+          {file && <ProgressBar file={file} setFile={setFileUpload} />}
         </div>
       </form>
     </div>

@@ -5,7 +5,7 @@ const Title = () => {
     <div className="title">
       <h1>airgram</h1>
       <h2>Your Pictures</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>Upload any images you like in png, jpeg or jpg format.</p>
     </div>
   );
 }
