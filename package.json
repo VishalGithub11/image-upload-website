@@ -2,6 +2,9 @@
   "name": "imagewebsite",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "16.14.2"
+  },
   "dependencies": {
     "firebase": "^8.6.2",
     "framer-motion": "^4.1.17",
